@@ -1,0 +1,39 @@
+name: Report a problem
+description: Something in GameVerse isn't working right
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping make GameVerse better. Please don't include personal information.
+  - type: input
+    id: game
+    attributes:
+      label: Which game?
+      placeholder: e.g. Chess, Ludo, Tile Fall, or "the home screen"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and system version
+      placeholder: e.g. iPhone 15, iOS 26.1
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown on the App Store page, or in the Profile tab if available.
+      placeholder: e.g. 1.0.4
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Optional. Drag images or videos here.
